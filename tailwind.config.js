@@ -6,9 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      screens: {
-        xs: '475px',
-      },
       colors: {
         primary: {
           50: '#f0f9ff',
@@ -55,9 +52,6 @@ export default {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-      backgroundSize: {
-        '300%': '300%',
       },
     },
   },

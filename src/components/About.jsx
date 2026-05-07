@@ -77,7 +77,7 @@ const About = ({ setActiveSection }) => {
   ];
 
   return (
-    <section id="about" className="py-16 sm:py-20 px-4 sm:px-6 relative overflow-hidden bg-[#0a0b14]">
+    <section id="about" className="py-20 px-4 relative overflow-hidden bg-[#0a0b14]">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grid Pattern */}
@@ -133,7 +133,7 @@ const About = ({ setActiveSection }) => {
           </motion.span>
           <motion.h2
             variants={itemVariants}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 mt-4"
+            className="text-5xl md:text-6xl font-display font-bold mb-6 mt-4"
           >
             <motion.span
               animate={{
@@ -151,7 +151,7 @@ const About = ({ setActiveSection }) => {
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto font-sans leading-relaxed"
+            className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto font-sans leading-relaxed"
           >
             Hi! I'm <span className="text-purple-300 font-semibold">Sathiya Priya P</span> — a full-stack developer with a passion for crafting elegant frontends, architecting smooth backends, and solving real-world problems through code. My journey is fueled by curiosity, consistency, and a love for tech that makes a difference.
           </motion.p>
@@ -163,11 +163,11 @@ const About = ({ setActiveSection }) => {
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
           variants={containerVariants}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mt-10 sm:mt-12"
+          className="grid md:grid-cols-2 gap-8 mt-12"
         >
           {/* Left Column: Stats */}
           <div className="space-y-8">
-            <motion.div variants={itemVariants} className="grid grid-cols-2 gap-3 sm:gap-4">
+            <motion.div variants={itemVariants} className="grid grid-cols-2 gap-4">
               {stats.map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -221,8 +221,8 @@ const About = ({ setActiveSection }) => {
           {/* Right Column: Skills */}
           <motion.div variants={itemVariants} className="space-y-8">
             <div className="p-6 bg-purple-600/10 backdrop-blur-sm rounded-xl border border-purple-500/20">
-              <h3 className="text-xl sm:text-2xl font-semibold text-purple-300 mb-4 sm:mb-6">Skills & Expertise</h3>
-              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+              <h3 className="text-2xl font-semibold text-purple-300 mb-6">Skills & Expertise</h3>
+              <div className="grid grid-cols-2 gap-4">
                 {skills.map((skill) => (
                   <motion.div
                     key={skill.name}

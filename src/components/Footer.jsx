@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <footer className="relative py-8 sm:py-10 overflow-hidden bg-gradient-to-b from-[#0a0b14] via-[#12131f] to-[#0a0b14]">
+    <footer className="relative py-8 overflow-hidden bg-gradient-to-b from-[#0a0b14] via-[#12131f] to-[#0a0b14]">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grid Pattern */}
@@ -45,7 +45,7 @@ const Footer = () => {
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative backdrop-blur-sm">
+      <div className="max-w-7xl mx-auto px-4 relative backdrop-blur-sm">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -61,22 +61,12 @@ const Footer = () => {
             SATHIYA PRIYA
           </motion.div>
 
-          {/* College Info */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.15 }}
-            className="text-white/50 text-xs sm:text-sm text-center"
-          >
-            🎓 PSG Krishnammal College for Women &nbsp;·&nbsp; B.C.A &nbsp;·&nbsp; Coimbatore
-          </motion.div>
-
           {/* Copyright */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-white/70 text-xs sm:text-sm text-center"
+            className="text-white/70 text-sm text-center"
           >
             © {new Date().getFullYear()} SATHIYA PRIYA. All rights reserved.
           </motion.div>

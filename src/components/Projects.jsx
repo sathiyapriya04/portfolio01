@@ -83,7 +83,7 @@ const Projects = ({ setActiveSection }) => {
   };
 
   return (
-    <section id="projects" className="py-16 sm:py-20 px-4 sm:px-6 relative overflow-hidden bg-[#0a0b14]">
+    <section id="projects" className="py-20 px-4 relative overflow-hidden bg-[#0a0b14]">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grid Pattern */}
@@ -139,7 +139,7 @@ const Projects = ({ setActiveSection }) => {
           </motion.span>
           <motion.h2 
             variants={itemVariants}
-            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 font-display"
+            className="text-4xl md:text-5xl font-bold mb-6 font-display"
           >
             <motion.span
               animate={{
@@ -157,14 +157,14 @@ const Projects = ({ setActiveSection }) => {
           </motion.h2>
           <motion.p 
             variants={itemVariants}
-            className="text-base sm:text-xl text-white/80 max-w-3xl mx-auto font-sans"
+            className="text-xl text-white/80 max-w-3xl mx-auto font-sans"
           >
             Here are some of the projects I've worked on. Each one represents a unique challenge
             and learning experience.
           </motion.p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -188,8 +188,8 @@ const Projects = ({ setActiveSection }) => {
               </motion.div>
               
               <div className="p-6">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-purple-200 mb-2 font-display">{project.title}</h3>
-                <p className="text-sm sm:text-base text-white/70 mb-4 font-sans">{project.description}</p>
+                <h3 className="text-2xl font-bold text-purple-200 mb-2 font-display">{project.title}</h3>
+                <p className="text-white/70 mb-4 font-sans">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
@@ -207,7 +207,7 @@ const Projects = ({ setActiveSection }) => {
                   ))}
                 </div>
 
-                <div className="flex flex-col xs:flex-row items-start xs:items-center justify-between gap-3">
+                <div className="flex items-center justify-between">
                   <motion.span
                     variants={itemVariants}
                     className={`px-3 py-1 rounded-full text-sm font-medium ${

@@ -75,7 +75,7 @@ const Hero = ({ setActiveSection }) => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center py-24 sm:py-20 px-4 sm:px-6 relative overflow-hidden bg-gradient-to-b from-[#0a0b14] via-[#12131f] to-[#0a0b14]">
+    <section id="home" className="min-h-screen flex items-center py-20 px-4 relative overflow-hidden bg-gradient-to-b from-[#0a0b14] via-[#12131f] to-[#0a0b14]">
       {/* Glitter Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Sparkle Grid */}
@@ -162,7 +162,7 @@ const Hero = ({ setActiveSection }) => {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10 backdrop-blur-sm">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -180,7 +180,7 @@ const Hero = ({ setActiveSection }) => {
 
             <motion.h1
               variants={itemVariants}
-              className="text-4xl sm:text-5xl md:text-7xl font-display font-bold mb-6 relative"
+              className="text-5xl md:text-7xl font-display font-bold mb-6 relative"
             >
               <span className="text-white">Hi, I'm </span>
               <motion.span
@@ -204,14 +204,14 @@ const Hero = ({ setActiveSection }) => {
 
             <motion.h2
               variants={itemVariants}
-              className="text-xl sm:text-2xl md:text-3xl font-display font-semibold mb-6 text-white/90"
+              className="text-2xl md:text-3xl font-display font-semibold mb-6 text-white/90"
             >
               A passionate full-stack developer
             </motion.h2>
 
             <motion.p
               variants={itemVariants}
-              className="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mb-8 font-sans"
+              className="text-lg md:text-xl text-white/80 max-w-2xl mb-8 font-sans"
             >
               I'm experienced in building responsive and user-friendly applications using technologies like React, Node.js, MongoDB, and Flutter. I love turning ideas into real-world applications, learning new technologies, and solving logical problems.
             </motion.p>
@@ -298,7 +298,7 @@ const Hero = ({ setActiveSection }) => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="relative flex justify-center"
+            className="relative"
           >
             <motion.div
               className="relative z-10"
@@ -309,7 +309,7 @@ const Hero = ({ setActiveSection }) => {
               <motion.div
                 variants={glowVariants}
                 animate="animate"
-                className="w-64 h-64 sm:w-80 sm:h-80 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] bg-gradient-to-br from-purple-900/20 to-fuchsia-900/20 shadow-2xl overflow-hidden backdrop-blur-sm border border-purple-500/20 relative rounded-full"
+                className="w-[32rem] h-[32rem] bg-gradient-to-br from-purple-900/20 to-fuchsia-900/20 shadow-2xl overflow-hidden backdrop-blur-sm border border-purple-500/20 relative rounded-full"
               >
                 {/* Circular Gradient Border */}
                 <motion.div
@@ -347,7 +347,7 @@ const Hero = ({ setActiveSection }) => {
                         }}
                         className="absolute -inset-4 bg-gradient-to-r from-purple-600/20 to-fuchsia-600/20 rounded-full blur-xl"
                       />
-                      <h3 className="relative text-2xl sm:text-3xl md:text-4xl font-bold mb-4 font-display">
+                      <h3 className="relative text-4xl font-bold mb-4 font-display">
                         <motion.span
                           animate={{
                             backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
@@ -442,7 +442,7 @@ const Hero = ({ setActiveSection }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.2 }}
-          className="mt-12 sm:mt-20"
+          className="mt-20"
         >
           <motion.h3 
             className="text-xl font-semibold text-purple-300 mb-6 text-center font-display"
