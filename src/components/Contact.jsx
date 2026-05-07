@@ -12,9 +12,9 @@ import emailjs from '@emailjs/browser';
 //    Save → copy the Template ID (e.g. 'template_xyz456')
 // 4. Account (top-right avatar) → API Keys → copy Public Key
 // 5. Replace the three placeholder strings below:
-const EMAILJS_SERVICE_ID  = 'service_xxxxxxx';   // ← paste your Service ID
-const EMAILJS_TEMPLATE_ID = 'template_xxxxxxx';  // ← paste your Template ID
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';    // ← paste your Public Key
+const EMAILJS_SERVICE_ID  = 'service_arvnrlr';   // ← Your Service ID ✅
+const EMAILJS_TEMPLATE_ID = 'template_3lg9fjw';  // ← Your Template ID ✅
+const EMAILJS_PUBLIC_KEY  = 'aXQCHk6JbMLQ6fAvO-TRL'; // ← Your Public Key ✅
 // ─────────────────────────────────────────────────────────────────────────────
 
 const Contact = ({ setActiveSection }) => {
