@@ -3,10 +3,18 @@ import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 // ─── EmailJS Configuration ────────────────────────────────────────────────────
-// Replace these with your actual EmailJS credentials from https://emailjs.com
-const EMAILJS_SERVICE_ID  = 'service_xxxxxxx';   // e.g. 'service_abc123'
-const EMAILJS_TEMPLATE_ID = 'template_xxxxxxx';  // e.g. 'template_xyz456'
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';    // e.g. 'abcDEFghi123'
+// 1. Sign up free at https://www.emailjs.com
+// 2. Email Services  → Add New → Gmail → connect sathiyapriyasudha2004@gmail.com
+//    Copy the Service ID (e.g. 'service_abc123')
+// 3. Email Templates → Create New → paste this template body:
+//      Subject : New message from {{from_name}}
+//      Body    : Name: {{from_name}}\nEmail: {{reply_to}}\n\n{{message}}
+//    Save → copy the Template ID (e.g. 'template_xyz456')
+// 4. Account (top-right avatar) → API Keys → copy Public Key
+// 5. Replace the three placeholder strings below:
+const EMAILJS_SERVICE_ID  = 'service_xxxxxxx';   // ← paste your Service ID
+const EMAILJS_TEMPLATE_ID = 'template_xxxxxxx';  // ← paste your Template ID
+const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';    // ← paste your Public Key
 // ─────────────────────────────────────────────────────────────────────────────
 
 const Contact = ({ setActiveSection }) => {
@@ -286,6 +294,10 @@ const Contact = ({ setActiveSection }) => {
             className="p-5 sm:p-6 bg-purple-600/10 backdrop-blur-sm rounded-xl border border-purple-500/20 space-y-5"
           >
             <StatusBanner />
+
+            {/* Hidden fields EmailJS template uses */}
+            <input type="hidden" name="from_name" value={formData.name} />
+            <input type="hidden" name="reply_to"  value={formData.email} />
 
             {/* Name */}
             <div>
