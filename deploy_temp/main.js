@@ -4,9 +4,9 @@
 // STEP 3: Create Email Template with variables: {{from_name}}, {{reply_to}}, {{message}}
 //         → copy Template ID below
 // STEP 4: Go to Account → copy Public Key below
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // ← replace
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // ← replace
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // ← replace
+const EMAILJS_PUBLIC_KEY  = 'bdFtZ6pPXKhTUjhRy';
+const EMAILJS_SERVICE_ID  = 'service_arvnrlr';
+const EMAILJS_TEMPLATE_ID = 'template_3lg9fjw';
 
 emailjs.init(EMAILJS_PUBLIC_KEY);
 
