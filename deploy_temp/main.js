@@ -5,7 +5,7 @@
 //         → copy Template ID below
 // STEP 4: Go to Account → copy Public Key below
 const EMAILJS_PUBLIC_KEY  = 'bdFtZ6pPXKhTUjhRy';
-const EMAILJS_SERVICE_ID  = 'service_arvnrlr';
+const EMAILJS_SERVICE_ID  = 'service_ioud7mv';
 const EMAILJS_TEMPLATE_ID = 'template_3lg9fjw';
 
 emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
