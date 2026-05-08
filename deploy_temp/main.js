@@ -94,9 +94,10 @@ form.addEventListener('submit', async e => {
 
   try {
     await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-      from_name: name,
-      reply_to:  email,
-      message:   message,
+      name:    name,
+      email:   email,
+      message: message,
+      title:   'Portfolio Contact Form',
     });
     submitBtn.innerHTML = 'Message Sent!';
     submitBtn.style.background = '#059669';
