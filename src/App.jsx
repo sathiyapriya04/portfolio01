@@ -53,7 +53,8 @@ function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-[#0a0b14] via-[#12131f] to-[#0a0b14] overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden"
+      style={{ background: 'linear-gradient(135deg, #0f0c29 0%, #1a0533 40%, #0d1b4b 70%, #0f0c29 100%)' }}>
       {/* Global Glitter Background */}
       <div className="fixed inset-0 pointer-events-none">
         {/* Bright Sparkle Grid */}
@@ -174,7 +175,8 @@ function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 flex items-center justify-center bg-[#0a0b14] z-50"
+            className="fixed inset-0 flex items-center justify-center z-50"
+              style={{ background: 'linear-gradient(135deg, #0f0c29 0%, #1a0533 50%, #0d1b4b 100%)' }}
           >
             {/* Animated Background */}
             <div className="absolute inset-0 overflow-hidden">
@@ -196,7 +198,7 @@ function App() {
                   repeat: Infinity,
                   ease: "linear",
                 }}
-                className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-600/5 to-fuchsia-600/5 rounded-full filter blur-3xl"
+                className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-600/30 to-fuchsia-600/30 rounded-full filter blur-3xl"
               />
             </div>
 
@@ -248,7 +250,7 @@ function App() {
                       repeat: Infinity,
                       delay: index * 0.2,
                     }}
-                    className="w-3 h-3 rounded-full bg-purple-500"
+                    className="w-3 h-3 rounded-full bg-gradient-to-r from-purple-400 to-fuchsia-400 shadow-lg shadow-purple-500/50"
                   />
                 ))}
               </motion.div>

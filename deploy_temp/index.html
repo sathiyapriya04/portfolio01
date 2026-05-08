@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sathiya Priya P — Full-Stack & AI Developer</title>
+  <meta name="description" content="Portfolio of Sathiya Priya P — Motivated full-stack developer skilled in React, Flask, MongoDB, Flutter and ML integration." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">S<span class="logo-accent">P</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:sathiyapriyasudha2004@gmail.com" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="m-link">About</a></li>
+      <li><a href="#skills" class="m-link">Skills</a></li>
+      <li><a href="#projects" class="m-link">Projects</a></li>
+      <li><a href="#certifications" class="m-link">Achievements</a></li>
+      <li><a href="#contact" class="m-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb o1"></div>
+      <div class="orb o2"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-welcome">
+          <span class="hw-line"></span>
+          <span class="hw-text">Welcome to my portfolio</span>
+          <span class="hw-line"></span>
+        </div>
+        <div class="hero-tag"><span class="pulse-dot"></span>Available for opportunities</div>
+        <div class="hero-name">Sathiya Priya P</div>
+        <h1 class="hero-title">Full-Stack<br><span class="accent">Developer.</span><br>AI Builder.</h1>
+        <p class="hero-desc">Motivated full-stack developer building responsive web and mobile applications. Skilled in React, Flask, MongoDB, and Flutter with a strong focus on scalable architecture and ML integration.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View Projects <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="resume.pdf" download="Sathiya_Priya_Resume.pdf" class="btn-outline btn-resume">Download CV <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
+          <a href="https://github.com/sathiyapriya04" target="_blank" class="btn-outline">GitHub</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="sn">4</span><span class="sl">Projects</span></div>
+          <div class="sdiv"></div>
+          <div class="stat"><span class="sn">BCA</span><span class="sl">+ MCA</span></div>
+          <div class="sdiv"></div>
+          <div class="stat"><span class="sn">AWS</span><span class="sl">Certified</span></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-card">
+
+          <!-- Top row: identity -->
+          <div class="hc-top">
+            <div class="hc-avatar">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(108,99,255,0.8)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </div>
+            <div class="hc-id">
+              <div class="hc-name">Sathiya Priya P</div>
+              <div class="hc-role">Full-Stack &amp; AI Developer</div>
+            </div>
+            <div class="hc-badge"><span class="pulse-dot"></span>Open to work</div>
+          </div>
+
+          <div class="hc-divider"></div>
+
+          <!-- Stats row -->
+          <div class="hc-stats">
+            <div class="hc-stat">
+              <div class="hc-sval">4</div>
+              <div class="hc-slbl">Projects</div>
+            </div>
+            <div class="hc-sdiv"></div>
+            <div class="hc-stat">
+              <div class="hc-sval">MCA</div>
+              <div class="hc-slbl">PSG Tech</div>
+            </div>
+            <div class="hc-sdiv"></div>
+            <div class="hc-stat">
+              <div class="hc-sval">AWS</div>
+              <div class="hc-slbl">Certified</div>
+            </div>
+            <div class="hc-sdiv"></div>
+            <div class="hc-stat">
+              <div class="hc-sval">95%</div>
+              <div class="hc-slbl">AI Accuracy</div>
+            </div>
+          </div>
+
+          <div class="hc-divider"></div>
+
+          <!-- Latest project highlight -->
+          <div class="hc-latest">
+            <div class="hc-latest-left">
+              <div class="hc-latest-tag">Latest Project</div>
+              <div class="hc-latest-name">DR Detection System</div>
+              <div class="hc-latest-meta">TensorFlow &middot; React &middot; Flask &middot; 95.2% accuracy</div>
+            </div>
+            <div class="hc-latest-dot"><span class="pulse-dot" style="background:var(--accent)"></span></div>
+          </div>
+
+          <div class="hc-divider"></div>
+
+          <!-- Scrolling ticker -->
+          <div class="hc-ticker-wrap">
+            <div class="hc-ticker">
+              <span>React.js</span><span>&middot;</span>
+              <span>Flask</span><span>&middot;</span>
+              <span>Flutter</span><span>&middot;</span>
+              <span>MongoDB</span><span>&middot;</span>
+              <span>TensorFlow</span><span>&middot;</span>
+              <span>Firebase</span><span>&middot;</span>
+              <span>Node.js</span><span>&middot;</span>
+              <span>Python</span><span>&middot;</span>
+              <span>PostgreSQL</span><span>&middot;</span>
+              <span>TypeScript</span><span>&middot;</span>
+              <span>React.js</span><span>&middot;</span>
+              <span>Flask</span><span>&middot;</span>
+              <span>Flutter</span><span>&middot;</span>
+              <span>MongoDB</span><span>&middot;</span>
+              <span>TensorFlow</span><span>&middot;</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue"><div class="scroll-bar"></div><span>Scroll</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="sec-label">About</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="sec-title">Building scalable,<br><span class="accent">impactful applications.</span></h2>
+          <p class="body-text">Motivated full-stack developer experienced in building responsive web and mobile applications. Skilled in React.js, Flask, MongoDB, and Flutter with a strong focus on scalable architecture, intuitive UI/UX, secure API development, and problem-solving.</p>
+          <p class="body-text">From AI-powered farming platforms to e-commerce solutions and mobile health apps, I build end-to-end products that solve real-world problems.</p>
+          <div class="tag-row">
+            <span class="tag">Full-Stack Dev</span>
+            <span class="tag">Mobile (Flutter)</span>
+            <span class="tag">ML Integration</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">UI/UX</span>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="edu-card reveal">
+            <div class="edu-year">2024 – 2026</div>
+            <div class="edu-degree">Master of Computer Application (MCA)</div>
+            <div class="edu-school">PSG College of Technology</div>
+            <div class="edu-cgpa">CGPA: 7.5 / 10</div>
+          </div>
+          <div class="edu-card reveal">
+            <div class="edu-year">2021 – 2024</div>
+            <div class="edu-degree">Bachelor of Computer Application (BCA)</div>
+            <div class="edu-school">PSG Krishnammal College for Women</div>
+            <div class="edu-cgpa">CGPA: 7.9 / 10</div>
+          </div>
+          <div class="info-card reveal">
+            <div class="ic-label">Approach</div>
+            <div class="ic-title">End-to-end ownership</div>
+            <p class="ic-body">From REST API design and ML model integration to responsive frontend and cloud deployment — I own the full stack.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills-sec" id="skills">
+    <div class="container">
+      <div class="sec-label">Expertise</div>
+      <h2 class="sec-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-block reveal">
+          <div class="sb-head">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span>Languages</span>
+          </div>
+          <div class="sk-tags"><span>Java</span><span>C</span><span>JavaScript</span><span>Dart</span><span>HTML</span><span>CSS</span><span>Python</span></div>
+        </div>
+        <div class="skill-block reveal">
+          <div class="sb-head">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span>Frameworks</span>
+          </div>
+          <div class="sk-tags"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>Flask</span><span>Flutter</span><span>TailwindCSS</span><span>CNN</span></div>
+        </div>
+        <div class="skill-block reveal">
+          <div class="sb-head">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3S3 13.66 3 12"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            <span>Database &amp; Tools</span>
+          </div>
+          <div class="sk-tags"><span>MongoDB</span><span>SQL</span><span>MySQL</span><span>Firebase</span><span>Git</span><span>VS Code</span><span>IntelliJ</span><span>Android Studio</span></div>
+        </div>
+        <div class="skill-block reveal">
+          <div class="sb-head">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+            <span>Core Competencies</span>
+          </div>
+          <div class="sk-tags"><span>REST APIs</span><span>UI/UX</span><span>Cloud Deployment</span><span>ML Integration</span><span>OpenWeather API</span><span>Razorpay</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="sec-label">Work</div>
+      <h2 class="sec-title">Projects on GitHub</h2>
+      <div class="proj-grid-all">
+
+        <!-- DR Detection - Latest Featured -->
+        <div class="pcard reveal pcard-featured">
+          <div class="pcard-img">
+            <img src="img_dr.png" alt="Diabetic Retinopathy Detection System" />
+            <div class="pcard-badge">Latest Project</div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-num">01</div>
+            <h3 class="pcard-title">Diabetic Retinopathy Detection System</h3>
+            <p class="pcard-desc">Production-grade AI medical system analysing retinal fundus images to detect and classify diabetic retinopathy across five severity stages. Full patient-doctor workflow with JWT auth, automated email notifications, and real-time AI inference.</p>
+            <div class="pcard-stats">
+              <span class="pcs"><strong>95.2%</strong> Accuracy</span>
+              <span class="pcs"><strong>5-Class</strong> Model</span>
+              <span class="pcs"><strong>Full Stack</strong> Architecture</span>
+            </div>
+            <div class="pcard-tech"><span>TensorFlow</span><span>EfficientNet</span><span>React</span><span>TypeScript</span><span>Flask</span><span>PostgreSQL</span><span>JWT</span></div>
+            <a href="https://github.com/sathiyapriya04/diabetic-retinopathy-system" target="_blank" class="pcard-link">View on GitHub <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+        </div>
+
+        <!-- CropIQ -->
+        <div class="pcard reveal">
+          <div class="pcard-img">
+            <img src="img_cropiq.png" alt="CropIQ AI Smart Farming Platform" />
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-num">02</div>
+            <h3 class="pcard-title">CropIQ — AI-Powered Smart Farming Platform</h3>
+            <p class="pcard-desc">Full-stack farming assistant integrating crop recommendations, fertilizer guidance, and plant disease detection. ML-based crop suggestion models classify soil and weather factors. CNN-powered disease detection with image upload and confidence-based diagnosis. Integrated OpenWeather API for real-time climate data.</p>
+            <div class="pcard-stats">
+              <span class="pcs"><strong>CNN</strong> Disease Detection</span>
+              <span class="pcs"><strong>OpenWeather</strong> API</span>
+              <span class="pcs"><strong>ML</strong> Crop Ranking</span>
+            </div>
+            <div class="pcard-tech"><span>React.js</span><span>Flask</span><span>MongoDB</span><span>Flutter</span><span>TailwindCSS</span><span>CNN</span><span>JWT</span></div>
+            <a href="https://github.com/sathiyapriya04/Mini-project-01" target="_blank" class="pcard-link">View on GitHub <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Sweet Surprises -->
+        <div class="pcard reveal">
+          <div class="pcard-img">
+            <img src="img_sweet.png" alt="Sweet Surprises E-Commerce Platform" />
+            <div class="pcard-badge pcard-badge-live">Live</div>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-num">03</div>
+            <h3 class="pcard-title">Sweet Surprises — Full-Stack E-Commerce Platform</h3>
+            <p class="pcard-desc">Scalable gifting platform with product browsing, cart management, checkouts, and order history. REST APIs via Express.js + MongoDB, integrated Razorpay payment gateway, and deployed on Vercel with reusable React component architecture.</p>
+            <div class="pcard-tech"><span>React.js</span><span>Tailwind</span><span>Express.js</span><span>MongoDB</span><span>Razorpay</span></div>
+            <div class="pcard-link-row">
+              <a href="https://github.com/Balajisix/swweet-surprises" target="_blank" class="pcard-link">GitHub <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+              <a href="https://swweet-surprises.vercel.app/" target="_blank" class="pcard-link pcard-link-live">Live Demo <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Medicos -->
+        <div class="pcard reveal">
+          <div class="pcard-img">
+            <img src="img_medus.png" alt="Medicos AI Medicine Reminder App" />
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-num">04</div>
+            <h3 class="pcard-title">Medicos — AI-Based Medicine Reminder App</h3>
+            <p class="pcard-desc">Cross-platform mobile app improving medication adherence through personalised AI reminders. Flutter dashboards with reminder scheduling, Firebase Authentication + Firestore for real-time sync, and ML-based optimization to schedule reminders based on user behavior patterns.</p>
+            <div class="pcard-tech"><span>Flutter</span><span>Dart</span><span>Firebase</span><span>Node.js</span><span>ML</span></div>
+            <a href="https://github.com/sathiyapriya04/MEDICOS" target="_blank" class="pcard-link">View on GitHub <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section certs-sec" id="certifications">
+    <div class="container">
+      <div class="sec-label">Recognition</div>
+      <h2 class="sec-title">Certifications &amp; Achievements</h2>
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">AWS Cloud Technical Essentials</div>
+            <div class="cert-sub">Amazon Web Services — Cloud Certification</div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">100 Days of Code</div>
+            <div class="cert-sub">Python Programming — Completed</div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">3rd Prize — Inter-College Competition</div>
+            <div class="cert-sub">Hindustani College — Technical Achievement</div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Foundations of Digital Marketing &amp; E-Commerce</div>
+            <div class="cert-sub">Google — Digital Marketing Certification</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-sec" id="contact">
+    <div class="container">
+      <div class="sec-label">Contact</div>
+      <div class="contact-inner">
+        <div class="contact-left">
+          <h2 class="sec-title">Let's build something<br><span class="accent">meaningful together.</span></h2>
+          <p class="body-text">I'm open to full-time roles, freelance projects, and research collaborations in full-stack development, mobile apps, and AI/ML integration.</p>
+          <div class="contact-links">
+            <a href="mailto:sathiyapriyasudha2004@gmail.com" class="cl-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              sathiyapriyasudha2004@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/sathiya-priya-p-06092a328" target="_blank" class="cl-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/sathiya-priya-p
+            </a>
+            <a href="https://github.com/sathiyapriya04" target="_blank" class="cl-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              github.com/sathiyapriya04
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="fg"><label for="fname">Name</label><input id="fname" name="from_name" type="text" placeholder="Your name" required /></div>
+          <div class="fg"><label for="femail">Email</label><input id="femail" name="reply_to" type="email" placeholder="your@email.com" required /></div>
+          <div class="fg"><label for="fmsg">Message</label><textarea id="fmsg" name="message" rows="5" placeholder="Tell me about your project..." required></textarea></div>
+          <button type="submit" class="btn-primary" id="submitBtn">Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">Sathiya Priya P</span>
+      <div class="footer-nav">
+        <a href="https://github.com/sathiyapriya04" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/sathiya-priya-p-06092a328" target="_blank">LinkedIn</a>
+        <a href="mailto:sathiyapriyasudha2004@gmail.com">Email</a>
+        <a href="https://portfolio01-theta-three.vercel.app/" target="_blank" rel="noopener noreferrer" title="Sathiya Priya Portfolio">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block;vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>Portfolio
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

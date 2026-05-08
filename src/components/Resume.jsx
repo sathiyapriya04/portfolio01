@@ -18,7 +18,9 @@ const Resume = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="#"
+            href="https://drive.google.com/file/d/1OX_Xxfv9T0jjo0iNOseniCWw6F2BdrNn/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-blue-600 text-white text-lg font-medium rounded-lg shadow-lg hover:shadow-xl transition-all"
           >
             Download Resume

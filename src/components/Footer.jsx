@@ -2,7 +2,8 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <footer className="relative py-8 overflow-hidden bg-gradient-to-b from-[#0a0b14] via-[#12131f] to-[#0a0b14]">
+    <footer className="relative py-8 overflow-hidden"
+      style={{ background: 'linear-gradient(to bottom, #0d0a2e, #0a0b1e)' }}>
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grid Pattern */}
@@ -25,7 +26,7 @@ const Footer = () => {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-600/5 to-fuchsia-600/5 rounded-full filter blur-3xl"
+          className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-600/20 to-fuchsia-600/20 rounded-full filter blur-3xl"
         />
         <motion.div
           animate={{
@@ -38,11 +39,11 @@ const Footer = () => {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-violet-600/5 to-purple-600/5 rounded-full filter blur-3xl"
+          className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-violet-600/15 to-purple-600/15 rounded-full filter blur-3xl"
         />
         
         {/* Gradient Line */}
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-400/70 to-transparent" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 relative backdrop-blur-sm">
@@ -107,6 +108,20 @@ const Footer = () => {
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </motion.a>
+            <motion.a
+              href="https://portfolio01-theta-three.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Sathiya Priya Portfolio"
+              whileHover={{ scale: 1.1, y: -2 }}
+              className="text-purple-300 hover:text-purple-400 transition-colors"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
               </svg>
             </motion.a>
           </motion.div>

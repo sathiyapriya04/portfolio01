@@ -77,7 +77,8 @@ const About = ({ setActiveSection }) => {
   ];
 
   return (
-    <section id="about" className="py-20 px-4 relative overflow-hidden bg-[#0a0b14]">
+    <section id="about" className="py-20 px-4 relative overflow-hidden"
+      style={{ background: 'linear-gradient(160deg, #0d0a2e 0%, #160a2a 50%, #0a1535 100%)' }}>
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grid Pattern */}
@@ -100,7 +101,7 @@ const About = ({ setActiveSection }) => {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-600/10 to-fuchsia-600/10 rounded-full filter blur-3xl"
+          className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-600/25 to-fuchsia-600/25 rounded-full filter blur-3xl"
         />
         <motion.div
           animate={{
@@ -113,7 +114,7 @@ const About = ({ setActiveSection }) => {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-violet-600/10 to-purple-600/10 rounded-full filter blur-3xl"
+          className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-violet-600/20 to-purple-600/20 rounded-full filter blur-3xl"
         />
       </div>
 
@@ -127,7 +128,7 @@ const About = ({ setActiveSection }) => {
         >
           <motion.span
             variants={itemVariants}
-            className="inline-block px-4 py-2 bg-purple-600/20 backdrop-blur-sm text-purple-300 rounded-full text-sm font-medium border border-purple-500/30"
+            className="inline-block px-4 py-2 bg-purple-500/30 backdrop-blur-sm text-purple-200 rounded-full text-sm font-medium border border-purple-400/50 shadow-lg shadow-purple-500/20"
           >
             About Me
           </motion.span>
@@ -173,7 +174,7 @@ const About = ({ setActiveSection }) => {
                   key={stat.label}
                   variants={statsVariants}
                   whileHover={{ scale: 1.05 }}
-                  className="p-6 bg-purple-600/10 backdrop-blur-sm rounded-xl border border-purple-500/20"
+                  className="p-6 bg-purple-500/20 backdrop-blur-sm rounded-xl border border-purple-400/30 shadow-lg shadow-purple-900/30"
                 >
                   <motion.h3
                     animate={{
@@ -196,7 +197,7 @@ const About = ({ setActiveSection }) => {
             {/* Timeline or Additional Content */}
             <motion.div
               variants={itemVariants}
-              className="p-6 bg-purple-600/10 backdrop-blur-sm rounded-xl border border-purple-500/20"
+              className="p-6 bg-purple-500/20 backdrop-blur-sm rounded-xl border border-purple-400/30 shadow-lg shadow-purple-900/30"
             >
               <h3 className="text-2xl font-semibold text-purple-300 mb-4">My Journey</h3>
               <div className="space-y-4">
@@ -230,14 +231,14 @@ const About = ({ setActiveSection }) => {
                     whileHover="hover"
                     className="relative"
                   >
-                    <div className="p-4 bg-purple-600/20 rounded-lg border border-purple-500/30 hover:border-purple-500/50 transition-colors">
+                  <div className="p-4 bg-purple-500/25 rounded-lg border border-purple-400/40 hover:border-purple-300/60 transition-colors">
                       <h4 className="text-white font-medium mb-2">{skill.name}</h4>
                       <div className="h-2 bg-purple-900/50 rounded-full overflow-hidden">
                         <motion.div
                           initial={{ width: 0 }}
                           whileInView={{ width: `${skill.level}%` }}
                           transition={{ duration: 1, ease: "easeOut" }}
-                          className="h-full bg-gradient-to-r from-purple-500 to-fuchsia-500"
+                          className="h-full bg-gradient-to-r from-purple-400 to-pink-400"
                         />
                       </div>
                     </div>

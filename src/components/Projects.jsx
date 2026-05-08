@@ -3,32 +3,41 @@ import { motion } from 'framer-motion';
 const Projects = ({ setActiveSection }) => {
   const projects = [
     {
-      title: "INTERACTIVE QUIZ APPLICATION",
-      description: "Built a responsive and interactive quiz web app with real-time feedback, dynamic question flow, and a user-friendly, visually engaging UI.",
-      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
-      tags: ["HTML", "CSS", "JAVASCRIT"],
-      github: "https://github.com/sathiyapriya04/quiz",
+      title: "DIABETIC RETINOPATHY DETECTION SYSTEM",
+      description: "AI-powered full-stack system for early diabetic retinopathy diagnosis. EfficientNet deep learning model with 95%+ accuracy, React + TypeScript frontend, Flask API backend, JWT auth, PostgreSQL, and automated email reports.",
+      image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80",
+      tags: ["TensorFlow", "EfficientNet", "React", "TypeScript", "Flask", "PostgreSQL", "JWT"],
+      github: "https://github.com/sathiyapriya04/diabetic-retinopathy-system",
       demo: "#",
       status: "completed"
     },
     {
-      title: "MEDICOS - AI Based Medicine Remainder App",
-      description: "Developing an AI-powered medicine reminder app with OCR-based prescription scanning, smart pill identification, real-time alerts, and seamless healthcare integration for improved medication adherence.",
-      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
-      tags: ["Flutter", "Firebase", "API", "Dart"],
+      title: "SWEET SURPRISES — E-Commerce Platform",
+      description: "A modern e-commerce platform for a gift shop, featuring product catalog, shopping cart, user authentication, and Razorpay payment integration. Deployed live on Vercel.",
+      image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      tags: ["React", "Redux", "Tailwind CSS", "MongoDB", "Node.js", "Express.js"],
+      github: "https://github.com/Balajisix/swweet-surprises",
+      demo: "https://swweet-surprises.vercel.app/",
+      status: "completed"
+    },
+    {
+      title: "MEDICOS — AI Medicine Reminder App",
+      description: "Cross-platform AI-powered medicine reminder app with OCR prescription scanning, smart alerts, Firebase auth + Firestore, and ML-based reminder optimization.",
+      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=2080&q=80",
+      tags: ["Flutter", "Firebase", "Dart", "ML"],
       github: "https://github.com/sathiyapriya04/MEDICOS",
       demo: "#",
       status: "ongoing"
     },
     {
-      title: "SWEET SURPRISES",
-      description: "A modern e-commerce platform for a gift shop, featuring product catalog, shopping cart, user authentication, and secure payment integration.",
-      image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      tags: [ "React", "Redux", "Tailwind css","MongoDB","Node.js","Express.js"],   
-      github: "https://github.com/sathiyapriya04/sweet-surprises",
-      demo: "https://swweet-surprises.vercel.app/shop/home",
+      title: "INTERACTIVE QUIZ APPLICATION",
+      description: "Responsive and interactive quiz web app with real-time feedback, dynamic question flow, and an engaging UI built with vanilla JavaScript.",
+      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80",
+      tags: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/sathiyapriya04/quiz",
+      demo: "#",
       status: "completed"
-    }
+    },
   ];
 
   // Animation variants
@@ -83,7 +92,8 @@ const Projects = ({ setActiveSection }) => {
   };
 
   return (
-    <section id="projects" className="py-20 px-4 relative overflow-hidden bg-[#0a0b14]">
+    <section id="projects" className="py-20 px-4 relative overflow-hidden"
+      style={{ background: 'linear-gradient(160deg, #0a0b1e 0%, #130a2e 50%, #0a1040 100%)' }}>
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grid Pattern */}
@@ -106,7 +116,7 @@ const Projects = ({ setActiveSection }) => {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-600/10 to-fuchsia-600/10 rounded-full filter blur-3xl"
+          className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-600/25 to-fuchsia-600/25 rounded-full filter blur-3xl"
         />
         <motion.div
           animate={{
@@ -119,7 +129,7 @@ const Projects = ({ setActiveSection }) => {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-violet-600/10 to-purple-600/10 rounded-full filter blur-3xl"
+          className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-violet-600/20 to-purple-600/20 rounded-full filter blur-3xl"
         />
       </div>
 
@@ -173,7 +183,7 @@ const Projects = ({ setActiveSection }) => {
                 y: -10,
                 transition: { duration: 0.3 }
               }}
-              className="bg-purple-600/10 backdrop-blur-sm rounded-xl overflow-hidden border border-purple-500/20"
+              className="bg-purple-500/20 backdrop-blur-sm rounded-xl overflow-hidden border border-purple-400/30 shadow-xl shadow-purple-900/20 hover:shadow-purple-700/30 hover:border-purple-400/50 transition-all"
             >
               <motion.div 
                 variants={imageVariants}
