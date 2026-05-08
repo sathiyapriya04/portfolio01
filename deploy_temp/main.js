@@ -8,7 +8,7 @@ const EMAILJS_PUBLIC_KEY  = 'bdFtZ6pPXKhTUjhRy';
 const EMAILJS_SERVICE_ID  = 'service_arvnrlr';
 const EMAILJS_TEMPLATE_ID = 'template_3lg9fjw';
 
-emailjs.init(EMAILJS_PUBLIC_KEY);
+emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
 // ─── Cursor ───────────────────────────────────────────────────────────────────
 const cursor = document.getElementById('cursor');
@@ -93,7 +93,11 @@ form.addEventListener('submit', async e => {
   submitBtn.disabled = true;
 
   try {
-    await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form);
+    await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+      from_name: name,
+      reply_to:  email,
+      message:   message,
+    });
     submitBtn.innerHTML = 'Message Sent!';
     submitBtn.style.background = '#059669';
     form.reset();
