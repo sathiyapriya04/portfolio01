@@ -111,7 +111,7 @@ const Footer = () => {
               </svg>
             </motion.a>
             <motion.a
-              href="https://portfolio01-theta-three.vercel.app/"
+              href="https://sathiyapriya-portfolio-website.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               title="Sathiya Priya Portfolio"
